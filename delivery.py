@@ -1,10 +1,4 @@
-from enum import IntEnum
 from typing import Literal
-
-
-class PackageSize(IntEnum):
-    small = 0
-    large = 1
 
 
 def calc_delivery_payment(distance: int | float, small_size: bool, fragility: bool, workload: Literal[0, 1, 2, 3]) -> int:
